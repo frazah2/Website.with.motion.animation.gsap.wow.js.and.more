@@ -129,4 +129,69 @@ document.addEventListener("DOMContentLoaded", function() {
     );
   });
     
-    
+    // Initialize WOW.js
+new WOW().init();
+
+// Animate floating line
+gsap.to(".floating-line", {
+  x: 300,
+  yoyo: true,
+  repeat: -1,
+  duration: 5,
+  ease: "power1.inOut"
+});
+
+// Animate floating object
+gsap.to(".floating-object", {
+  y: -100,
+  rotation: 360,
+  repeat: -1,
+  duration: 6,
+  ease: "power1.inOut",
+  yoyo: true
+});
+// Initialize WOW.js
+new WOW().init();
+
+// Floating Line Animation
+gsap.to(".floating-line", {
+  x: 500,
+  y: 300,
+  yoyo: true,
+  repeat: -1,
+  duration: 5,
+  ease: "power1.inOut"
+});
+
+// Floating Circle Animation
+gsap.to(".floating-circle", {
+  x: -300,
+  y: 300,
+  rotation: 360,
+  repeat: -1,
+  duration: 6,
+  ease: "power1.inOut",
+  yoyo: true
+});
+
+// Floating Square Animation
+gsap.to(".floating-square", {
+  x: 300,
+  y: -300,
+  scale: 0.5,
+  repeat: -1,
+  duration: 4,
+  ease: "power1.inOut",
+  yoyo: true
+});
+
+// Floating Triangle Animation
+gsap.to(".floating-triangle", {
+  x: -500,
+  y: -200,
+  rotation: 180,
+  repeat: -1,
+  duration: 7,
+  ease: "power1.inOut",
+  yoyo: true
+});
